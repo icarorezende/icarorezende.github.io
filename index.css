@@ -1,32 +1,34 @@
 :root {
-  /* Core Surfaces - Light Theme (Default) */
-  --bg-primary: hsl(40, 25%, 97%);
-  --bg-elevated: hsl(40, 20%, 94%);
-  --bg-surface: hsl(0, 0%, 100%);
-  --bg-surface-hover: hsl(40, 18%, 95%);
-  --bg-glass: hsla(40, 25%, 97%, 0.88);
+  /* Realtime Colors Palette — Light Theme (Default)
+   * text: #050315 | background: #fbfbfe | primary: #2f27ce | secondary: #dedcff | accent: #433bff
+   */
+  --bg-primary: #fbfbfe;
+  --bg-elevated: #f3f2ff;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #dedcff;
+  --bg-glass: rgba(251, 251, 254, 0.88);
 
-  /* Text Hierarchy */
-  --text-primary: hsl(216, 28%, 12%);
-  --text-secondary: hsl(215, 16%, 32%);
-  --text-muted: hsl(215, 12%, 46%);
+  /* Text Hierarchy (#050315 base) */
+  --text-primary: #050315;
+  --text-secondary: rgba(5, 3, 21, 0.76);
+  --text-muted: rgba(5, 3, 21, 0.56);
 
-  /* Functional & Architectural Accents */
-  --accent-primary: hsl(28, 84%, 42%);
-  --accent-primary-hover: hsl(28, 88%, 35%);
-  --accent-primary-subtle: hsla(28, 84%, 42%, 0.09);
-  --accent-secondary: hsl(176, 68%, 29%);
-  --accent-secondary-subtle: hsla(176, 68%, 29%, 0.09);
+  /* Primary (#2f27ce), Secondary (#dedcff) & Accent (#433bff) */
+  --accent-primary: #2f27ce;
+  --accent-primary-hover: #433bff;
+  --accent-primary-subtle: #dedcff;
+  --accent-secondary: #433bff;
+  --accent-secondary-subtle: rgba(67, 59, 255, 0.12);
 
   /* Structural Borders & Depth */
-  --border-subtle: hsla(216, 24%, 14%, 0.09);
-  --border-strong: hsla(216, 24%, 14%, 0.18);
-  --surface-highlight: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.85);
-  --shadow-card: 0 10px 28px -10px hsla(216, 28%, 12%, 0.07), var(--surface-highlight);
-  --shadow-card-hover: 0 18px 36px -12px hsla(216, 28%, 12%, 0.13), var(--surface-highlight);
+  --border-subtle: rgba(47, 39, 206, 0.12);
+  --border-strong: rgba(47, 39, 206, 0.26);
+  --surface-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+  --shadow-card: 0 10px 28px -10px rgba(5, 3, 21, 0.07), var(--surface-highlight);
+  --shadow-card-hover: 0 18px 36px -12px rgba(47, 39, 206, 0.16), var(--surface-highlight);
 
-  /* Typography */
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Typography — Inter */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* Layout & Spacing */
@@ -39,27 +41,28 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary: hsl(216, 24%, 7%);
-  --bg-elevated: hsl(216, 20%, 10%);
-  --bg-surface: hsl(215, 18%, 13%);
-  --bg-surface-hover: hsl(215, 18%, 16%);
-  --bg-glass: hsla(216, 24%, 8%, 0.86);
+  /* Realtime Colors Inverted Dark Equivalent */
+  --bg-primary: #050315;
+  --bg-elevated: #0d0928;
+  --bg-surface: #120e33;
+  --bg-surface-hover: #1b1549;
+  --bg-glass: rgba(5, 3, 21, 0.88);
 
-  --text-primary: hsl(40, 20%, 96%);
-  --text-secondary: hsl(215, 14%, 72%);
-  --text-muted: hsl(215, 12%, 52%);
+  --text-primary: #fbfbfe;
+  --text-secondary: rgba(251, 251, 254, 0.76);
+  --text-muted: rgba(251, 251, 254, 0.54);
 
-  --accent-primary: hsl(32, 85%, 55%);
-  --accent-primary-hover: hsl(32, 90%, 62%);
-  --accent-primary-subtle: hsla(32, 85%, 55%, 0.12);
-  --accent-secondary: hsl(175, 58%, 45%);
-  --accent-secondary-subtle: hsla(175, 58%, 45%, 0.12);
+  --accent-primary: #433bff;
+  --accent-primary-hover: #5b54ff;
+  --accent-primary-subtle: rgba(47, 39, 206, 0.24);
+  --accent-secondary: #dedcff;
+  --accent-secondary-subtle: rgba(222, 220, 255, 0.12);
 
-  --border-subtle: hsla(215, 16%, 85%, 0.08);
-  --border-strong: hsla(215, 16%, 85%, 0.15);
-  --surface-highlight: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.06);
-  --shadow-card: 0 14px 34px -12px hsla(220, 40%, 2%, 0.55), var(--surface-highlight);
-  --shadow-card-hover: 0 20px 42px -12px hsla(220, 45%, 2%, 0.75), var(--surface-highlight);
+  --border-subtle: rgba(222, 220, 255, 0.12);
+  --border-strong: rgba(222, 220, 255, 0.25);
+  --surface-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+  --shadow-card: 0 14px 34px -12px rgba(0, 0, 0, 0.6), var(--surface-highlight);
+  --shadow-card-hover: 0 20px 42px -12px rgba(67, 59, 255, 0.28), var(--surface-highlight);
 }
 
 *,
@@ -237,27 +240,24 @@ body {
 
 .btn-primary {
   background-color: var(--accent-primary);
-  color: hsl(0, 0%, 100%);
-}
-
-[data-theme="dark"] .btn-primary {
-  color: hsl(216, 28%, 8%);
+  color: #fbfbfe;
 }
 
 .btn-primary:hover {
   background-color: var(--accent-primary-hover);
   transform: translateY(-1px);
+  box-shadow: 0 8px 20px -6px rgba(67, 59, 255, 0.45);
 }
 
 .btn-secondary {
-  background-color: var(--bg-surface);
+  background-color: var(--accent-primary-subtle);
   color: var(--text-primary);
-  border-color: var(--border-strong);
-  box-shadow: var(--surface-highlight);
+  border-color: var(--border-subtle);
 }
 
 .btn-secondary:hover {
   background-color: var(--bg-surface-hover);
+  border-color: var(--border-strong);
   transform: translateY(-1px);
 }
 
@@ -539,12 +539,8 @@ body {
 
 .filter-btn.active {
   background: var(--accent-primary);
-  color: hsl(0, 0%, 100%);
+  color: #fbfbfe;
   border-color: var(--accent-primary);
-}
-
-[data-theme="dark"] .filter-btn.active {
-  color: hsl(216, 28%, 8%);
 }
 
 .stack-grid {
