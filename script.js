@@ -9,7 +9,7 @@ const PORTFOLIO_DATA = {
     domain: "icarorezende.com",
     website: "https://icarorezende.com",
     location: "Salvador, BA (Remoto)",
-    role: "Tech Lead de Transformação Digital & Infraestrutura",
+    role: "Gestão de Transformação Digital & Infraestrutura",
     email: "contato@icarorezende.com",
     linkedin: "https://linkedin.com/in/icarorezende",
     github: "https://github.com/icarorezende"
@@ -97,7 +97,7 @@ const PORTFOLIO_DATA = {
       name: "SRE, DRP/BCP & Agile (Scrum)",
       category: "security-grc",
       domain: "Resiliência & Liderança",
-      description: "Engenharia de confiabilidade (SRE), planos de continuidade/recuperação de desastres e liderança ágil.",
+      description: "Engenharia de confiabilidade (SRE), planos de continuidade/recuperação de desastres e gestão ágil.",
       tags: ["SRE", "DRP/BCP", "Agile / Scrum", "Observabilidade"]
     }
   ],
@@ -111,7 +111,7 @@ const PORTFOLIO_DATA = {
       outcomes: [
         "Redução expressiva no tempo de provisionamento e eliminação de inconsistências de configuração.",
         "Padronização de deploy integrada a clusters Kubernetes (Rancher/OpenShift) e containers (Docker/Podman).",
-        "Condução técnica de squads multidisciplinares utilizando práticas DevOps, SRE e Scrum."
+        "Condução técnica e gestão de squads multidisciplinares utilizando práticas DevOps, SRE e Scrum."
       ],
       techs: ["Ansible AAP/AWX", "Terraform", "OpenShift", "Rancher", "DevOps"]
     },
