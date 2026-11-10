@@ -151,29 +151,6 @@ const PORTFOLIO_DATA = {
       ],
       techs: ["CIS Controls", "IAM", "Cyber Security", "ITIL", "LGPD"]
     }
-  ],
-
-  credentials: [
-    {
-      type: "Pós-Graduação (2026)",
-      title: "Direito Digital, LGPD e Prática em Proteção de Dados",
-      detail: "Faculdade i9 Educação"
-    },
-    {
-      type: "Especialização (2011 – 2012)",
-      title: "Qualidade e Governança de TI",
-      detail: "Centro Universitário Jorge Amado (UNIJORGE)"
-    },
-    {
-      type: "Graduação (2006 – 2008)",
-      title: "Tecnólogo em Redes de Computadores",
-      detail: "Centro Universitário Jorge Amado (UNIJORGE)"
-    },
-    {
-      type: "Certificação Oficial",
-      title: "AWS Certified Cloud Practitioner",
-      detail: "Amazon Web Services (AWS)"
-    }
   ]
 };
 
@@ -228,23 +205,6 @@ function renderProjects(filterCategory = "all") {
         <div class="project-footer">
           ${project.techs.map((tech) => `<span class="tag">${tech}</span>`).join("")}
         </div>
-      </article>
-    `
-    )
-    .join("");
-}
-
-function renderCredentials() {
-  const credentialsContainer = document.getElementById("credentials-container");
-  if (!credentialsContainer) return;
-
-  credentialsContainer.innerHTML = PORTFOLIO_DATA.credentials
-    .map(
-      (cred, index) => `
-      <article class="credential-card" id="credential-item-${index}">
-        <span class="credential-type">${cred.type}</span>
-        <h4 class="credential-title">${cred.title}</h4>
-        <p class="credential-detail">${cred.detail}</p>
       </article>
     `
     )
@@ -331,7 +291,6 @@ function setupInteractions() {
 document.addEventListener("DOMContentLoaded", () => {
   renderStack("all");
   renderProjects("all");
-  renderCredentials();
   setupFilters();
   setupThemeToggle();
   setupInteractions();
