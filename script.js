@@ -1,17 +1,16 @@
 /**
  * ============================================================================
  * DADOS DO PORTFÓLIO — ÍCARO REZENDE (icarorezende.com)
- * Baseado no currículo oficial de Ícaro Rezende.
+ * Versão enxuta e executiva
  * ============================================================================
  */
 const PORTFOLIO_DATA = {
   profile: {
     name: "Ícaro Rezende",
-    handle: "@icarorezende",
     domain: "icarorezende.com",
     website: "https://icarorezende.com",
-    location: "Salvador, BA, Brasil (Disponibilidade Remota)",
-    role: "Tech Lead de Transformação Digital & Infraestrutura | IAM & AIaaS | Cyber Security, Resiliência & Compliance",
+    location: "Salvador, BA (Remoto)",
+    role: "Tech Lead de Transformação Digital & Infraestrutura",
     email: "contato@icarorezende.com",
     linkedin: "https://linkedin.com/in/icarorezende",
     github: "https://github.com/icarorezende"
@@ -19,139 +18,139 @@ const PORTFOLIO_DATA = {
 
   stackItems: [
     {
-      name: "IaC: Ansible AAP/AWX & Terraform",
+      name: "Ansible AAP/AWX & Terraform",
       category: "automacao-containers",
-      domain: "Automação & DevOps",
-      description: "Desenvolvimento e implantação de esteiras de automação e Infraestrutura como Código, padronizando configurações e reduzindo o tempo de provisionamento de centenas de servidores.",
+      domain: "IaC & Automação",
+      description: "Esteiras de automação e Infraestrutura como Código padronizando provisionamento e eliminando débitos técnicos.",
       tags: ["Ansible AAP/AWX", "Terraform", "IaC", "DevOps"]
     },
     {
-      name: "AIaaS & Infraestrutura para LLMs",
-      category: "automacao-containers",
-      domain: "Inteligência Artificial Local",
-      description: "Planejamento e arquitetura computacional voltada à implementação de Inteligência Artificial como Serviço (AIaaS) e sustentação de modelos locais (LLMs) com soberania de dados.",
-      tags: ["AIaaS", "Local LLMs", "Arquitetura IA", "Soberania de Dados"]
-    },
-    {
-      name: "Kubernetes: Rancher & OpenShift",
+      name: "OpenShift, Rancher & Kubernetes",
       category: "automacao-containers",
       domain: "Orquestração Cloud-Native",
-      description: "Orquestração corporativa de microsserviços e containers em clusters de alta disponibilidade utilizando Red Hat OpenShift e SUSE Rancher.",
+      description: "Clusters corporativos de alta disponibilidade, governança multi-cluster e suporte a microsserviços.",
       tags: ["Red Hat OpenShift", "SUSE Rancher", "Kubernetes", "HA"]
+    },
+    {
+      name: "AIaaS & Modelos Locais (LLMs)",
+      category: "automacao-containers",
+      domain: "Inteligência Artificial Local",
+      description: "Arquitetura para IA como Serviço e inferência local de modelos com soberania de dados e conformidade LGPD.",
+      tags: ["AIaaS", "Local LLMs", "Soberania de Dados"]
     },
     {
       name: "Docker & Podman",
       category: "automacao-containers",
-      domain: "Conteinerização & Runtime",
-      description: "Padronização de imagens corporativas, execução segura rootless com Podman e aceleração de entregas em esteiras modernas.",
+      domain: "Containers & Runtime",
+      description: "Padronização de imagens corporativas, execução rootless segura e integração a pipelines CI/CD.",
       tags: ["Docker", "Podman", "Rootless", "CI/CD"]
     },
     {
       name: "VMware vSphere & Proxmox VE",
       category: "infra-cloud",
       domain: "Virtualização Enterprise",
-      description: "Administração, consolidação e evolução contínua de clusters virtualizados de grande porte suportando bancos de dados e sistemas de missão crítica.",
-      tags: ["VMware vSphere", "Proxmox VE", "HA/DRS", "Consolidação"]
+      description: "Administração e consolidação de clusters de grande porte suportando bancos de dados e sistemas de missão crítica.",
+      tags: ["VMware vSphere", "Proxmox VE", "HA/DRS"]
     },
     {
-      name: "Multicloud (AWS, GCP & OCI)",
+      name: "Multicloud (AWS, GCP, OCI)",
       category: "infra-cloud",
-      domain: "Cloud Computing & Híbrida",
-      description: "Arquitetura de soluções em nuvem pública e híbrida combinando AWS (Certified Cloud Practitioner), Google Cloud Platform (GCP) e Oracle Cloud (OCI).",
-      tags: ["AWS Certified", "GCP", "OCI", "Arquitetura de Soluções"]
+      domain: "Nuvem Pública & Híbrida",
+      description: "Arquitetura de soluções em nuvem combinando AWS (Certified), Google Cloud e Oracle Cloud.",
+      tags: ["AWS Certified", "GCP", "OCI"]
     },
     {
       name: "Linux Enterprise & Windows Server",
       category: "infra-cloud",
-      domain: "Sistemas Operacionais Críticos",
-      description: "Sustentação avançada de parques heterogêneos Linux (RHEL, Debian, Ubuntu) e Windows Server / Active Directory em operações de larga escala.",
-      tags: ["RHEL / Debian / Ubuntu", "Windows Server", "Active Directory", "DNS/DHCP"]
+      domain: "Sistemas Operacionais",
+      description: "Sustentação de parques heterogêneos Linux (RHEL/Debian/Ubuntu) e Windows Server / Active Directory.",
+      tags: ["RHEL", "Debian", "Windows Server", "AD"]
     },
     {
-      name: "Redes Corporativas, VPNs & Firewalls",
+      name: "Redes Corporativas & Firewalls",
       category: "infra-cloud",
-      domain: "Conectividade & Perímetro",
-      description: "Projeto, implementação e sustentação de redes corporativas, interconexão segura entre unidades via VPN e proteção de borda com firewalls.",
-      tags: ["Firewalls", "VPN", "LAN/WAN", "Segurança de Rede"]
+      domain: "Conectividade & Borda",
+      description: "Segmentação de rede, interconexão segura via VPNs e proteção de borda com firewalls.",
+      tags: ["Firewalls", "VPN", "LAN/WAN"]
     },
     {
-      name: "Gestão de Identidades e Acessos (IAM)",
+      name: "IAM & Active Directory",
       category: "security-grc",
-      domain: "Identidade & Zero Trust",
-      description: "Governança de identidades, controle de acesso baseado em papéis (RBAC), autenticação centralizada e proteção de credenciais privilegiadas.",
-      tags: ["IAM", "Active Directory", "RBAC", "Controle de Acesso"]
+      domain: "Identidade & Acessos",
+      description: "Governança de identidades, controle de privilégios mínimos (RBAC) e proteção de acessos corporativos.",
+      tags: ["IAM", "Active Directory", "RBAC"]
     },
     {
-      name: "Cyber Security, Hardening & CIS Controls",
+      name: "Cyber Security & CIS Controls",
       category: "security-grc",
-      domain: "Defesa & Resposta a Incidentes",
-      description: "Alinhamento operacional ao framework CIS Controls, hardening de servidores, contenção de incidentes de segurança e análise de causa raiz (RCA).",
-      tags: ["CIS Controls", "Hardening", "Incident Response", "RCA"]
+      domain: "Defesa & Resposta",
+      description: "Hardening alinhado ao framework CIS Controls, resposta a incidentes e análise de causa raiz (RCA).",
+      tags: ["CIS Controls", "Hardening", "Incident Response"]
     },
     {
-      name: "Governança GRC (ITIL, COBIT) & LGPD",
+      name: "Governança GRC & LGPD",
       category: "security-grc",
-      domain: "Compliance & Direito Digital",
-      description: "Gestão de serviços e processos sob diretrizes ITIL e COBIT aliada à especialização em Direito Digital, LGPD e Proteção de Dados.",
-      tags: ["ITIL", "COBIT", "LGPD", "Direito Digital"]
+      domain: "Compliance Regulatório",
+      description: "Gestão operacional sob práticas ITIL e COBIT com foco em Direito Digital e Proteção de Dados.",
+      tags: ["ITIL", "COBIT", "LGPD", "Compliance"]
     },
     {
-      name: "SRE, Continuidade (DRP/BCP), Agile & SIEM",
+      name: "SRE, DRP/BCP & Agile (Scrum)",
       category: "security-grc",
-      domain: "Resiliência & Liderança Técnica",
-      description: "Engenharia de confiabilidade (SRE), planos de recuperação de desastres (DRP/BCP), observabilidade/SIEM e liderança ágil de equipes (Scrum).",
-      tags: ["SRE", "DRP / BCP", "Observabilidade & SIEM", "Agile / Scrum"]
+      domain: "Resiliência & Liderança",
+      description: "Engenharia de confiabilidade (SRE), planos de continuidade/recuperação de desastres e liderança ágil.",
+      tags: ["SRE", "DRP/BCP", "Agile / Scrum", "Observabilidade"]
     }
   ],
 
   projects: [
     {
-      title: "Transformação Digital & IaC em Larga Escala (Ansible AAP/AWX & Terraform)",
+      title: "Transformação Digital & IaC em Larga Escala",
       category: "automacao-containers",
-      categoryLabel: "Transformação Digital & IaC • PRODEB",
-      summary: "Liderança técnica na modernização de operações de infraestrutura e implantação de esteiras de Infraestrutura como Código para plataformas digitais estaduais.",
+      categoryLabel: "Automação & IaC • PRODEB",
+      summary: "Modernização de operações com Ansible AAP/AWX e Terraform para provisionamento padronizado de centenas de servidores.",
       outcomes: [
-        "Desenvolvimento de automações via Ansible AAP/AWX e Terraform, reduzindo drasticamente o tempo de provisionamento de centenas de servidores.",
-        "Eliminação de débitos técnicos e padronização de ambientes integrados a clusters Kubernetes (Rancher/OpenShift) e containers (Docker/Podman).",
-        "Condução técnica de equipes multidisciplinares utilizando práticas DevOps, SRE e metodologias ágeis (Scrum)."
+        "Redução expressiva no tempo de provisionamento e eliminação de inconsistências de configuração.",
+        "Padronização de deploy integrada a clusters Kubernetes (Rancher/OpenShift) e containers (Docker/Podman).",
+        "Condução técnica de squads multidisciplinares utilizando práticas DevOps, SRE e Scrum."
       ],
-      techs: ["Ansible AAP/AWX", "Terraform", "OpenShift", "Rancher", "Docker/Podman", "DevOps"]
+      techs: ["Ansible AAP/AWX", "Terraform", "OpenShift", "Rancher", "DevOps"]
     },
     {
-      title: "Arquitetura Local de Inteligência Artificial como Serviço (AIaaS / LLMs)",
+      title: "Arquitetura Local para AIaaS & Modelos LLMs",
       category: "automacao-containers",
-      categoryLabel: "AIaaS & Arquitetura de Soluções • PRODEB",
-      summary: "Planejamento e estruturação de infraestrutura computacional on-premises voltada ao fornecimento de Inteligência Artificial como Serviço (AIaaS).",
+      categoryLabel: "AIaaS & Inovação • PRODEB",
+      summary: "Planejamento e estruturação de ambiente computacional dedicado para Inteligência Artificial como Serviço on-premises.",
       outcomes: [
-        "Desenho de arquitetura de soluções para sustentação de modelos locais de linguagem (LLMs) com alta performance e isolamento.",
-        "Garantia de soberania tecnológica, privacidade e conformidade estrita com a LGPD no processamento de dados institucionais.",
-        "Orquestração escalável preparada para múltiplos serviços digitais e cargas de trabalho modernas."
+        "Sustentação e inferência de modelos locais de linguagem (LLMs) com isolamento e alta performance.",
+        "Garantia de soberania de dados institucionais e conformidade estrita com a LGPD.",
+        "Infraestrutura conteinerizada pronta para atender múltiplos serviços digitais estaduais."
       ],
-      techs: ["AIaaS", "LLMs Locais", "Arquitetura de Soluções", "Kubernetes", "LGPD"]
+      techs: ["AIaaS", "Local LLMs", "Kubernetes", "LGPD"]
     },
     {
-      title: "Sustentação Crítica & Consolidação de Virtualização (VMware vSphere / Proxmox & Cloud)",
+      title: "Consolidação de Clusters Críticos & Multicloud",
       category: "infra-cloud",
-      categoryLabel: "Infraestrutura Crítica & Cloud • PRODEB / VIPAC",
-      summary: "Engenharia, consolidação e evolução contínua de parques de virtualização de grande porte e integração com nuvens públicas.",
+      categoryLabel: "Virtualização & Cloud • PRODEB / VIPAC",
+      summary: "Sustentação de clusters VMware vSphere de missão crítica e estratégia multicloud com AWS, GCP e OCI.",
       outcomes: [
-        "Administração de clusters VMware vSphere de alta disponibilidade suportando bancos de dados e sistemas essenciais do Estado da Bahia.",
-        "Modernização tecnológica completa e consolidação de servidores legados gerando expressiva redução de custos (TCO) e downtime zero.",
-        "Arquitetura híbrida e multicloud (AWS, GCP, OCI) aliada a hipervisores corporativos (VMware vSphere e Proxmox VE)."
+        "Alta disponibilidade contínua para bancos de dados e sistemas essenciais da administração pública.",
+        "Consolidação de ambientes legados (VMware/Proxmox) com otimização de custos e planos de contingência (DRP).",
+        "Integração segura com provedores públicos de nuvem para cargas híbridas."
       ],
-      techs: ["VMware vSphere", "Proxmox VE", "AWS", "GCP", "OCI", "Linux / Windows Server"]
+      techs: ["VMware vSphere", "Proxmox VE", "AWS", "GCP", "OCI"]
     },
     {
-      title: "Resiliência Cibernética, IAM, CIS Controls & Governança GRC (ITIL/COBIT/LGPD)",
+      title: "Cyber Security, CIS Controls & Governança GRC",
       category: "security-grc",
-      categoryLabel: "Cyber Security, IAM & Compliance • PRODEB / VIPAC",
-      summary: "Estruturação de barreiras de proteção operacional, gestão de identidades, resposta a incidentes e planos de continuidade de negócios.",
+      categoryLabel: "Segurança & Compliance • PRODEB / VIPAC",
+      summary: "Implementação de barreiras operacionais, controle de identidades (IAM) e alinhamento a frameworks de conformidade.",
       outcomes: [
-        "Adequação operacional ao framework CIS Controls, governança ITIL/COBIT e diretrizes de proteção de dados (LGPD).",
-        "Atuação prioritária na contenção de incidentes de segurança, investigação de causa raiz (RCA), observabilidade e SIEM.",
-        "Implantação de políticas corporativas de segurança, controle de acessos (IAM) e planos de recuperação de desastres (DRP/BCP)."
+        "Hardening de infraestrutura alinhado ao framework CIS Controls e resposta estruturada a incidentes (RCA).",
+        "Alinhamento operacional entre governança de TI (ITIL/COBIT) e requisitos da LGPD.",
+        "Estruturação de políticas de segurança, monitoramento contínuo (SIEM) e testes de continuidade (BCP)."
       ],
-      techs: ["CIS Controls", "IAM", "Cyber Security", "ITIL & COBIT", "DRP/BCP", "SIEM"]
+      techs: ["CIS Controls", "IAM", "Cyber Security", "ITIL", "LGPD"]
     }
   ],
 
@@ -159,110 +158,65 @@ const PORTFOLIO_DATA = {
     {
       role: "Consultor em Transformação Digital I (Tech Lead de Infraestrutura)",
       period: "Jan 2025 – Presente",
-      organization: "Companhia de Processamento de Dados do Estado da Bahia (PRODEB)",
+      organization: "PRODEB — Cia. de Processamento de Dados do Estado da Bahia",
       highlights: [
-        "Liderança técnica em projetos de modernização de infraestrutura, arquitetura de soluções e sustentação de plataformas digitais para o setor público estadual, eliminando débitos técnicos e garantindo alta disponibilidade.",
-        "Desenvolvimento e implantação de esteiras de automação e Infraestrutura como Código (IaC via Ansible AAP/AWX), reduzindo o tempo de provisionamento e padronizando configurações de centenas de servidores corporativos.",
-        "Condução de iniciativas orientadas a conformidade e boas práticas operacionais alinhadas ao framework CIS Controls e governança ITIL/COBIT.",
-        "Planejamento e estruturação de arquitetura computacional voltada à implementação de serviços de Inteligência Artificial como Serviço (AIaaS) e sustentação de modelos locais (LLMs)."
+        "Liderança técnica em modernização de plataformas, automação IaC (Ansible AAP/AWX e Terraform) e alta disponibilidade de serviços estaduais.",
+        "Condução de conformidade operacional com CIS Controls, ITIL e COBIT.",
+        "Estruturação de arquitetura local para Inteligência Artificial como Serviço (AIaaS / LLMs)."
       ]
     },
     {
       role: "Analista de TIC II",
-      period: "Nov 2020 – Jan 2025 (4 anos 3 meses)",
-      organization: "Companhia de Processamento de Dados do Estado da Bahia (PRODEB)",
+      period: "Nov 2020 – Jan 2025",
+      organization: "PRODEB — Cia. de Processamento de Dados do Estado da Bahia",
       highlights: [
-        "Sustentação e engenharia de infraestrutura corporativa de larga escala, suportando serviços essenciais da administração pública estadual.",
-        "Administração e evolução contínua de cluster virtualizado VMware vSphere de alta disponibilidade, suportando bancos de dados e sistemas de missão crítica.",
-        "Atuação prioritária na resposta e contenção de incidentes de segurança de TI, elaboração de relatórios de causa raiz (RCA) e implementação de barreiras de proteção operacional."
+        "Sustentação de infraestrutura crítica corporativa e clusters virtualizados VMware vSphere.",
+        "Atuação na contenção de incidentes de segurança de TI e relatórios de causa raiz (RCA)."
       ]
     },
     {
       role: "Coordenador de TI",
-      period: "Dez 2013 – Jan 2019 (5 anos 2 meses)",
+      period: "Dez 2013 – Jan 2019",
       organization: "VIPAC Segurança e Vigilância LTDA",
       highlights: [
-        "Gestão integral da área de Tecnologia da Informação, liderando infraestrutura de rede, servidores, telecomunicações e suporte ao negócio sob diretrizes ITIL.",
-        "Modernização completa do parque tecnológico e consolidação de servidores legados através de virtualização VMware, gerando expressiva redução de custos operacionais e downtime zero.",
-        "Gestão de orçamento de TI, negociação com fornecedores, aquisição estratégica de ativos tecnológicos e estruturação de políticas corporativas de segurança e planos de recuperação de desastres (DRP/Backups).",
-        "Administração de sistemas corporativos: TOTVS Protheus, Domínio Contábil e GesOper."
+        "Gestão integral da área de TI sob diretrizes ITIL, servidores, redes, telecomunicações e ERP.",
+        "Consolidação de servidores legados via virtualização VMware com downtime zero e gestão de DRP."
       ]
     },
     {
-      role: "Professor de Ensino Técnico Profissionalizante",
-      period: "Out 2015 – Dez 2017 (2 anos 3 meses)",
-      organization: "Colégio Estadual de Aplicação Anísio Teixeira",
+      role: "Docência & Engenharia de Redes e Sistemas",
+      period: "2008 – 2017",
+      organization: "CEEAT • TENACE Engenharia • CONDER • Eurovia Veículos",
       highlights: [
-        "Docência e desenvolvimento de conteúdos programáticos práticos nas disciplinas de Sistemas Operacionais (Linux/Windows Server), Redes de Computadores, Segurança da Informação e Algoritmos.",
-        "Mentoria técnica de estudantes em projetos integradores práticos com foco em resolução estruturada de problemas corporativos."
-      ]
-    },
-    {
-      role: "Administrador de Rede e Sistemas Operacionais",
-      period: "Dez 2011 – Out 2012 (11 meses)",
-      organization: "TENACE Engenharia e Consultoria",
-      highlights: [
-        "Projeto, implementação e sustentação de redes corporativas e VPNs seguras interligando canteiros remotos e matriz de engenharia.",
-        "Administração de serviços Linux críticos (DNS, DHCP, firewall, inventário automatizado e rotinas de backup para recuperação de desastres)."
-      ]
-    },
-    {
-      role: "Administrador de Rede",
-      period: "Ago 2010 – Nov 2011 (1 ano 4 meses)",
-      organization: "CONDER - Companhia de Desenvolvimento Urbano do Estado da Bahia",
-      highlights: [
-        "Sustentação e expansão de infraestrutura de rede e servidores corporativos físicos e virtualizados (VMware, Linux e Windows Server).",
-        "Estruturação e implantação de catálogo de serviços e governança operacional alinhada aos fundamentos da ITIL."
-      ]
-    },
-    {
-      role: "Analista de Suporte Pleno",
-      period: "Jan 2008 – Jun 2010 (2 anos 6 meses)",
-      organization: "Eurovia Veículos S/A",
-      highlights: [
-        "Operação, sustentação de estabilidade e suporte técnico avançado do ambiente de TIC e dos sistemas centrais do grupo automotivo.",
-        "Sustentação de ERP corporativo (DealerNet), diagnóstico de redes locais (LAN, DHCP, DNS, roteamento) e execução de planos de contingência."
+        "Professor técnico (Linux, Redes, Segurança) e administração de redes, firewalls, servidores Linux/Windows e contingência."
       ]
     }
   ],
 
   credentials: [
     {
-      type: "Formação Acadêmica • Pós-Graduação (2026)",
-      title: "Pós-Graduação em Direito Digital, LGPD e Prática em Proteção de Dados",
+      type: "Pós-Graduação (2026)",
+      title: "Direito Digital, LGPD e Prática em Proteção de Dados",
       detail: "Faculdade i9 Educação"
     },
     {
-      type: "Formação Acadêmica • Especialização (2011 – 2012)",
-      title: "Especialização em Qualidade e Governança de TI",
+      type: "Especialização (2011 – 2012)",
+      title: "Qualidade e Governança de TI",
       detail: "Centro Universitário Jorge Amado (UNIJORGE)"
     },
     {
-      type: "Formação Acadêmica • Graduação (2006 – 2008)",
+      type: "Graduação (2006 – 2008)",
       title: "Tecnólogo em Redes de Computadores",
       detail: "Centro Universitário Jorge Amado (UNIJORGE)"
     },
     {
-      type: "Certificação Oficial • Cloud Computing",
+      type: "Certificação Oficial",
       title: "AWS Certified Cloud Practitioner",
-      detail: "Amazon Web Services (AWS) — Credly"
-    },
-    {
-      type: "Certificação & Licença • Proteção de Dados",
-      title: "Direitos Fundamentais no Mundo Digital (LGPD)",
-      detail: "Faculdade i9 Educação — Credencial: 3GSqRFTnhkvX9h7KNXO7"
-    },
-    {
-      type: "Certificação & Licença • Direito Digital",
-      title: "A Tecnologia e o Direito",
-      detail: "Faculdade i9 Educação — Credencial: bnHLrQXLY1x9oQa5gUmN"
+      detail: "Amazon Web Services (AWS)"
     }
   ]
 };
 
-/**
- * Renderiza os cards de Tech Stack com suporte a filtro por categoria
- */
 function renderStack(filterCategory = "all") {
   const container = document.getElementById("stack-grid-container");
   if (!container) return;
@@ -280,7 +234,7 @@ function renderStack(filterCategory = "all") {
             <h3 class="stack-name">${item.name}</h3>
             <span class="stack-domain">${item.domain}</span>
           </div>
-          <p class="stack-role-desc" style="margin-top: 0.55rem;">${item.description}</p>
+          <p class="stack-role-desc" style="margin-top: 0.45rem;">${item.description}</p>
         </div>
         <div class="stack-tags">
           ${item.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
@@ -291,9 +245,6 @@ function renderStack(filterCategory = "all") {
     .join("");
 }
 
-/**
- * Renderiza os cards de Projetos / Iniciativas com suporte a filtro
- */
 function renderProjects(filterCategory = "all") {
   const container = document.getElementById("projects-grid-container");
   if (!container) return;
@@ -323,9 +274,6 @@ function renderProjects(filterCategory = "all") {
     .join("");
 }
 
-/**
- * Renderiza Experiência Profissional e Formação/Credenciais
- */
 function renderCareer() {
   const timelineContainer = document.getElementById("timeline-container");
   const credentialsContainer = document.getElementById("credentials-container");
@@ -364,9 +312,6 @@ function renderCareer() {
   }
 }
 
-/**
- * Configura filtros interativos
- */
 function setupFilters() {
   const stackFilterBtns = document.querySelectorAll("[data-stack-filter]");
   stackFilterBtns.forEach((btn) => {
@@ -387,9 +332,6 @@ function setupFilters() {
   });
 }
 
-/**
- * Alternância de Tema (Claro como padrão / Escuro opcional)
- */
 function setupThemeToggle() {
   const themeBtn = document.getElementById("theme-toggle-btn");
   const savedTheme = localStorage.getItem("icarorezende_theme_pref") || "light";
@@ -405,9 +347,6 @@ function setupThemeToggle() {
   });
 }
 
-/**
- * Menu Mobile e Cópia de E-mail
- */
 function setupInteractions() {
   const mobileMenuBtn = document.getElementById("mobile-menu-toggle-btn");
   const mainNav = document.getElementById("main-navigation");
@@ -437,7 +376,7 @@ function setupInteractions() {
         toast.classList.add("visible");
         setTimeout(() => {
           toast.classList.remove("visible");
-        }, 2800);
+        }, 2500);
       } catch {
         window.location.href = `mailto:${PORTFOLIO_DATA.profile.email}`;
       }
