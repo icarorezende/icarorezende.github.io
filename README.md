@@ -12,6 +12,3 @@ Atuação na liderança estratégica de arquitetura, modernização e governanç
 - **IaC, Containers & AIaaS:** Ansible AAP/AWX, Terraform, Red Hat OpenShift, SUSE Rancher, Kubernetes, Docker/Podman e LLMs locais.
 - **Segurança & Governança:** IAM, Active Directory, CIS Controls, DRP/BCP, SIEM, ITIL, COBIT e LGPD.
 - **Liderança & Gestão:** Gestão de Operações de TI, Arquitetura de Soluções, SRE, DevOps e metodologias ágeis (Scrum).
-
-### Formação & Qualificações
-- Pós-Graduado em Direito Digital e LGPD · Especialista em Qualidade e Governança de TI · Tecnólogo em Redes de Computadores · AWS Certified Cloud Practitioner
