@@ -1,7 +1,6 @@
 /**
  * ============================================================================
  * DADOS DO PORTFÓLIO — ÍCARO REZENDE (icarorezende.com)
- * Versão enxuta e executiva
  * ============================================================================
  */
 const PORTFOLIO_DATA = {
@@ -107,7 +106,7 @@ const PORTFOLIO_DATA = {
     {
       title: "Transformação Digital & IaC em Larga Escala",
       category: "automacao-containers",
-      categoryLabel: "Automação & IaC • PRODEB",
+      categoryLabel: "Automação & IaC",
       summary: "Modernização de operações com Ansible AAP/AWX e Terraform para provisionamento padronizado de centenas de servidores.",
       outcomes: [
         "Redução expressiva no tempo de provisionamento e eliminação de inconsistências de configuração.",
@@ -119,22 +118,22 @@ const PORTFOLIO_DATA = {
     {
       title: "Arquitetura Local para AIaaS & Modelos LLMs",
       category: "automacao-containers",
-      categoryLabel: "AIaaS & Inovação • PRODEB",
+      categoryLabel: "AIaaS & Inovação",
       summary: "Planejamento e estruturação de ambiente computacional dedicado para Inteligência Artificial como Serviço on-premises.",
       outcomes: [
         "Sustentação e inferência de modelos locais de linguagem (LLMs) com isolamento e alta performance.",
         "Garantia de soberania de dados institucionais e conformidade estrita com a LGPD.",
-        "Infraestrutura conteinerizada pronta para atender múltiplos serviços digitais estaduais."
+        "Infraestrutura conteinerizada pronta para atender múltiplos serviços digitais."
       ],
       techs: ["AIaaS", "Local LLMs", "Kubernetes", "LGPD"]
     },
     {
       title: "Consolidação de Clusters Críticos & Multicloud",
       category: "infra-cloud",
-      categoryLabel: "Virtualização & Cloud • PRODEB / VIPAC",
+      categoryLabel: "Virtualização & Cloud",
       summary: "Sustentação de clusters VMware vSphere de missão crítica e estratégia multicloud com AWS, GCP e OCI.",
       outcomes: [
-        "Alta disponibilidade contínua para bancos de dados e sistemas essenciais da administração pública.",
+        "Alta disponibilidade contínua para bancos de dados e sistemas essenciais corporativos.",
         "Consolidação de ambientes legados (VMware/Proxmox) com otimização de custos e planos de contingência (DRP).",
         "Integração segura com provedores públicos de nuvem para cargas híbridas."
       ],
@@ -143,7 +142,7 @@ const PORTFOLIO_DATA = {
     {
       title: "Cyber Security, CIS Controls & Governança GRC",
       category: "security-grc",
-      categoryLabel: "Segurança & Compliance • PRODEB / VIPAC",
+      categoryLabel: "Segurança & Compliance",
       summary: "Implementação de barreiras operacionais, controle de identidades (IAM) e alinhamento a frameworks de conformidade.",
       outcomes: [
         "Hardening de infraestrutura alinhado ao framework CIS Controls e resposta estruturada a incidentes (RCA).",
@@ -151,45 +150,6 @@ const PORTFOLIO_DATA = {
         "Estruturação de políticas de segurança, monitoramento contínuo (SIEM) e testes de continuidade (BCP)."
       ],
       techs: ["CIS Controls", "IAM", "Cyber Security", "ITIL", "LGPD"]
-    }
-  ],
-
-  experiences: [
-    {
-      role: "Consultor em Transformação Digital I (Tech Lead de Infraestrutura)",
-      period: "Jan 2025 – Presente",
-      organization: "PRODEB — Cia. de Processamento de Dados do Estado da Bahia",
-      highlights: [
-        "Liderança técnica em modernização de plataformas, automação IaC (Ansible AAP/AWX e Terraform) e alta disponibilidade de serviços estaduais.",
-        "Condução de conformidade operacional com CIS Controls, ITIL e COBIT.",
-        "Estruturação de arquitetura local para Inteligência Artificial como Serviço (AIaaS / LLMs)."
-      ]
-    },
-    {
-      role: "Analista de TIC II",
-      period: "Nov 2020 – Jan 2025",
-      organization: "PRODEB — Cia. de Processamento de Dados do Estado da Bahia",
-      highlights: [
-        "Sustentação de infraestrutura crítica corporativa e clusters virtualizados VMware vSphere.",
-        "Atuação na contenção de incidentes de segurança de TI e relatórios de causa raiz (RCA)."
-      ]
-    },
-    {
-      role: "Coordenador de TI",
-      period: "Dez 2013 – Jan 2019",
-      organization: "VIPAC Segurança e Vigilância LTDA",
-      highlights: [
-        "Gestão integral da área de TI sob diretrizes ITIL, servidores, redes, telecomunicações e ERP.",
-        "Consolidação de servidores legados via virtualização VMware com downtime zero e gestão de DRP."
-      ]
-    },
-    {
-      role: "Docência & Engenharia de Redes e Sistemas",
-      period: "2008 – 2017",
-      organization: "CEEAT • TENACE Engenharia • CONDER • Eurovia Veículos",
-      highlights: [
-        "Professor técnico (Linux, Redes, Segurança) e administração de redes, firewalls, servidores Linux/Windows e contingência."
-      ]
     }
   ],
 
@@ -274,42 +234,21 @@ function renderProjects(filterCategory = "all") {
     .join("");
 }
 
-function renderCareer() {
-  const timelineContainer = document.getElementById("timeline-container");
+function renderCredentials() {
   const credentialsContainer = document.getElementById("credentials-container");
+  if (!credentialsContainer) return;
 
-  if (timelineContainer) {
-    timelineContainer.innerHTML = PORTFOLIO_DATA.experiences
-      .map(
-        (exp, index) => `
-        <article class="timeline-item" id="experience-item-${index}">
-          <div class="timeline-header">
-            <h4 class="timeline-role">${exp.role}</h4>
-            <span class="timeline-period">${exp.period}</span>
-          </div>
-          <div class="timeline-org">${exp.organization}</div>
-          <ul class="timeline-highlights">
-            ${exp.highlights.map((h) => `<li>${h}</li>`).join("")}
-          </ul>
-        </article>
-      `
-      )
-      .join("");
-  }
-
-  if (credentialsContainer) {
-    credentialsContainer.innerHTML = PORTFOLIO_DATA.credentials
-      .map(
-        (cred, index) => `
-        <article class="credential-card" id="credential-item-${index}">
-          <span class="credential-type">${cred.type}</span>
-          <h4 class="credential-title">${cred.title}</h4>
-          <p class="credential-detail">${cred.detail}</p>
-        </article>
-      `
-      )
-      .join("");
-  }
+  credentialsContainer.innerHTML = PORTFOLIO_DATA.credentials
+    .map(
+      (cred, index) => `
+      <article class="credential-card" id="credential-item-${index}">
+        <span class="credential-type">${cred.type}</span>
+        <h4 class="credential-title">${cred.title}</h4>
+        <p class="credential-detail">${cred.detail}</p>
+      </article>
+    `
+    )
+    .join("");
 }
 
 function setupFilters() {
@@ -392,7 +331,7 @@ function setupInteractions() {
 document.addEventListener("DOMContentLoaded", () => {
   renderStack("all");
   renderProjects("all");
-  renderCareer();
+  renderCredentials();
   setupFilters();
   setupThemeToggle();
   setupInteractions();

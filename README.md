@@ -13,6 +13,5 @@ Atuação na liderança de arquitetura, modernização e sustentação de opera�
 - **Segurança & Governança:** IAM, Active Directory, CIS Controls, DRP/BCP, SIEM, ITIL, COBIT e LGPD.
 - **Liderança:** Arquitetura de Soluções, SRE, DevOps e metodologias ágeis (Scrum).
 
-### Atuação & Formação
-- **Consultor em Transformação Digital I (Tech Lead de Infraestrutura)** — **PRODEB**
-- Pós-Graduado em Direito Digital e LGPD · Especialista em Qualidade e Governança de TI · Tecnólogo em Redes de Computadores
+### Formação & Qualificações
+- Pós-Graduado em Direito Digital e LGPD · Especialista em Qualidade e Governança de TI · Tecnólogo em Redes de Computadores · AWS Certified Cloud Practitioner
